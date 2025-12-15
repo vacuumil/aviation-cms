@@ -1,0 +1,25 @@
+{
+  "name": "aviation-cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "CMS для сайта по безопасности в авиации",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/strapi": "^4.20.0",
+    "@strapi/plugin-users-permissions": "^4.20.0",
+    "@strapi/plugin-i18n": "^4.20.0",
+    "pg": "^8.11.3"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "aviation-safety-cms"
+  }
+}
