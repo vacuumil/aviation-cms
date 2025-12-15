@@ -7,19 +7,30 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "deploy": "npm run build && npm run start"
   },
   "dependencies": {
-    "@strapi/strapi": "^4.20.0",
-    "@strapi/plugin-users-permissions": "^4.20.0",
-    "@strapi/plugin-i18n": "^4.20.0",
-    "pg": "^8.11.3"
+    "@strapi/plugin-content-manager": "^4.26.0",
+    "@strapi/plugin-content-type-builder": "^4.26.0",
+    "@strapi/plugin-i18n": "^4.26.0",
+    "@strapi/plugin-upload": "^4.26.0",
+    "@strapi/plugin-users-permissions": "^4.26.0",
+    "@strapi/strapi": "^4.26.0",
+    "pg": "^8.11.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.11"
   },
   "engines": {
-    "node": ">=18.0.0 <=22.x.x",
-    "npm": ">=6.0.0"
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=8.0.0"
   },
   "strapi": {
     "uuid": "aviation-safety-cms"
+  },
+  "devDependencies": {
+    "better-sqlite3": "^8.7.0"
   }
 }
